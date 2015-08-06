@@ -1,6 +1,9 @@
 # WPQuiz-Excel-to-XML-Convertor
-This application converts questions in Excel to XML format that can be imported to WPQuiz Plugin of Wordpress 
+Converts questions(Only MCQ) that are in Excel to WPQuiz XML.
+
+This converter is ideal for teachers who have a large number of questions in Excel and want to import them in bulk to WPQuiz wordpress plugin. 
+
 
 # Prerequisites
-AccessDatabaseEngine is required to run this application
+AccessDatabaseEngine is required to run this application <br />
 https://www.microsoft.com/en-in/download/details.aspx?id=13255
