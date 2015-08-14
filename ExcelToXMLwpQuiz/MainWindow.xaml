@@ -3,11 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Name="cmdGenerate" Content="Generate" Margin="0,33,25,0" Click="cmdGenerate_Click" HorizontalAlignment="Right" Width="114" Height="40" VerticalAlignment="Top"/>
+        <Button Name="cmdGenerate" Content="Generate XML" Margin="0,258,25,0" Click="cmdGenerate_Click" HorizontalAlignment="Right" Width="114" Height="40" VerticalAlignment="Top"/>
         <Button Name="cmdGetFile" Content="Select File" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="111" Height="46" Click="Button_Click"/>
         <Label Name="lblFileName" Content="FileName" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" Width="466"/>
-        <Label Content="Quiz Title" HorizontalAlignment="Left" Margin="26,138,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtQuizName" HorizontalAlignment="Left" Height="23" Margin="106,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="386"/>
+        <Label Content="Quiz Title" HorizontalAlignment="Left" Margin="61,140,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtQuizName" HorizontalAlignment="Left" Height="23" Margin="129,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="363"/>
+
+        <Button Margin="10,255,460,22" Name="cmdConfig" Click="cmdConfig_Click" >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="cog.png"  />
+            </StackPanel>
+        </Button>
+        <Label Content="Quiz Description" HorizontalAlignment="Left" Margin="26,166,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtQuizName_Copy" HorizontalAlignment="Left" Height="23" Margin="129,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="363"/>
 
     </Grid>
 </Window>

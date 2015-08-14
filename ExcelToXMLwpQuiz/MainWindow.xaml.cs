@@ -181,19 +181,26 @@ namespace ExcelToXMLwpQuiz
                 writer.WriteEndElement();
 
                 #endregion
-                
+
                 WriteQuestions q = new WriteQuestions();
-                q.ProcessExcel(lblFileName.Content.ToString(),writer);
-
-
+                q.ProcessExcel(lblFileName.Content.ToString(), writer);
+                
                 writer.WriteEndElement(); //end of quiz
                 writer.WriteEndElement(); //end of data element
-
-
+                
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
             }
 
+        }
+
+        private void cmdConfig_Click(object sender, RoutedEventArgs e)
+        {
+            dlgConfig cnfg = new dlgConfig()
+            {
+                ShowInTaskbar=false                
+            };
+            cnfg.ShowDialog();
         }
     }
 }
